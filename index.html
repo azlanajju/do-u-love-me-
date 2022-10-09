@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <style>
+    body{
+  background: black;
+  height: 100vh;
+  overflow-x: visible;
+ 
+}
+.wrapper{
+  
+  text-align: center;
+  border:5px dotted dimgrey;
+  padding: 30px;
+}
+.wrapper .container{
+  color: grey;
+  font-weight: bold;
+  font-size: 30px;
+}
+#no{
+  font-weight: bold;
+  color: #3B423C;
+  position: relative;
+  height: 35px;
+  width: 70px;
+  background-color: #AC1919;
+  font-size: 20px;
+  border-radius: 5px;
+}
+#yes{
+  
+  font-weight: bold;
+  color: #3B423C;
+  
+  border-radius: 5px;
+  height: 35px;
+  width: 70px;
+  background: #2C893A;
+  font-size: 20px;
+}
+.footer{
+  background: grey;
+  width: 100%;
+  position: fixed;
+  height:30px;
+  bottom: 0;
+  
+  text-align: center;
+  
+  
+  
+}
+
+  </style>
+</head>
+
+<body>
+  
+  <div class="wrapper">
+    
+    <div class="container">
+      
+      <p id="question">
+        Do you Love me?
+      </p>
+      <button id="yes" onclick="newfunction()"  class="btn" > Yes</button>
+      <button id="no" onclick="newfun()" class="btn">No</button>
+    </div>
+  </div>
+  <div class="footer">
+    
+      Azlan © 2022
+    
+  </div>
+  
+  <script> 
+  function newfunction(){
+    document.getElementById('question').innerHTML = "Love you too❤️";
+  } 
+  function newfun(){
+    document.getElementById('question').innerHTML = "You can't do that😌";
+    }
+  
+$(function() {
+$("button").on({
+  
+mouseover: function() {
+$(this).css({
+left: (Math.random() * 200) + "px",
+top: (Math.random() * 200) + "px",
+});
+}
+});
+});
+</script>
+</body>
+</html>
